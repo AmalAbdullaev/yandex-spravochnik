@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #dadada;
+}
+
+.header-body {
+    display: flex;
+    margin-left: 20px; 
+}
+
+.link__service-logo {
+    background-image: url('spravochnik.svg');
+    height: 28px;
+    width: 115px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:2px;
+}
+
+.link {
+    display: flex;
+}
+
+.link__yandex-logo {
+    background-image: url('Yandex.svg');
+    height: 28px;
+    width: 70px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.search {
+    display: flex;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.search__input {
+    height: 20px;
+    width: 300px;   
+    padding-top: 5px;
+    padding-bottom: 5px;  
+    border-radius: 3px 0 0 3px ;
+    border: 1px solid #ccc6c6;
+}
+
+.search__button {
+    background-color: Transparent;
+    border: 1px solid #ccc6c6;
+    border-radius: 0 3px 3px 0 ;
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+}
+
+.user {
+    display: flex;
+    margin-left: auto;
+}
+
+.user__link-photo {
+    width: 40px;
+    height: 40px;
+    background-image: url('large.jpg');
+    border-radius: 50%;
+    margin-right: 20px;
+    background-size: cover;
+}
+
+
+
+input[type=text] {
+    padding-left: 12px;
+}
