@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Яндекс.Справочник</title>
 </head>
 <body>
@@ -12,14 +13,122 @@
                 <a class="link__yandex-logo"></a>
                 <a class="link__service-logo"></a>
             </div>
-            <div class="search">
+            <form class="search">
                 <input class="search__input" type="text" name="search-input" placeholder="Название, телефон, сайт">
-                <button class="search__button">Найти</button>
-            </div>
+                <button class="button" type="submit">Найти</button>
+            </form>
         </div>
-                <div class="user">
-                    <a class="user__link-photo"></a>
-                </div>
+            <div class="user">
+                <img src="large.jpg" class="user__link-photo">
+            </div>
     </header>
+    <main class="main">
+        <nav class="content-wrapper">
+            <ul class="navigation-menu">
+                <li class="navigation-menu__item navigation-menu__item_active">
+                    <a class="navigation-menu__text">Мои организации</a>
+                    </li>
+                <li class="navigation-menu__item">Заявки на изменения</li>
+                <li class="navigation-menu__item">Мои заказы</li>
+            </ul>
+        </nav>
+        <section class="section">
+            <div class="section-header">
+                <h1>Кафе Гладиатор</h1>
+                <a href="#" class="section__link"><i class="fas fa-map-marker-alt"></i>Страница на Картах</a>
+            </div>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item"><a class="navigation__list-link" href="#">Информация</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-link" href="#">Услуги</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фото</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-link" href="#">Отзывы</a></li>
+                    <li class="navigation__list-item"><a class="navigation__list-link" href="#">Статистика</a></li>
+                </ul>
+            </nav>
+            <h2 class="page-title">12 отзывов об организации 
+                <div class="rating">9.8</div>
+            </h2>
+            
+            <article class="feedback">
+                <header class="feedback__header">
+                    <a class="feedback__author-link"> 
+                        <img src="mark.jpg" class="feedback__image">
+                        <h3>Василий Привалов</h3>
+                    </a>
+                    <time class="feedback__date text_gray" datetime="2016-05-04">4 апреля 2016</time>
+                    <span class="feedback__evaluation text_gray">оценка:</span>
+                    <i class="fas fa-thumbs-up"></i>
+                </header>
+                <p class="feedback__content">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy 
+                         text ever since the 1500s, when an unknown printer 
+                         took a galley of type and scrambled it to make a type specimen book. 
+                         It has survived not only five centuries, but also the 
+                </p>
+                <footer class="feedback__footer">
+                    <button class="button button_small">Ответить</button>
+                    <button class="button button_small">Пожаловаться</button>
+                    <a href="#" class="text_gray">Ссылка на отзыв</a>
+                </footer>
+            </article>
+            <article class="feedback">
+                    <header class="feedback__header">
+                        <a class="feedback__author-link"> 
+                            <img src="jsutin.jpg" class="feedback__image">
+                            <h3>Андрей Макаров</h3>
+                        </a>
+                        <time class="feedback__date text_gray" datetime="2016-05-04">4 апреля 2016</time>
+                        <span class="feedback__evaluation text_gray">оценка</span>
+                        <i class="fas fa-thumbs-up"></i>
+                    </header>
+                    <p class="feedback__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy 
+                             text ever since the 1500s, when an unknown printer 
+                             took a galley of type and scrambled it to make a type specimen book. 
+                             It has survived not only five centuries, but also the 
+                    </p>
+                    <footer class="feedback__footer">
+                        <button class="button button_small">Ответить</button>
+                        <button class="button button_small">Пожаловаться</button>
+                        <a href="#" class="text_gray">Ссылка на отзыв</a>
+                    </footer>
+            </article>
+            <article class="feedback">
+                    <header class="feedback__header">
+                        <a class="feedback__author-link"> 
+                            <img src="billie-eilish.jpg" class="feedback__image">
+                            <h3>Алиме Мамедова</h3>
+                        </a>
+                        <time class="feedback__date text_gray" datetime="2016-05-04">4 апреля 2016</time>
+                        <span class="feedback__evaluation text_gray">оценка</span>
+                        <i class="fas fa-thumbs-down"></i>
+                    </header>
+                    <p class="feedback__content">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy 
+                             text ever since the 1500s, when an unknown printer 
+                             took a galley of type and scrambled it to make a type specimen book. 
+                             It has survived not only five centuries, but also the 
+                    </p>
+                    <footer class="feedback__footer">
+                        <button class="button button_small">Ответить</button>
+                        <button class="button button_small">Пожаловаться</button>
+                        <a href="#" class="text_gray">Ссылка на отзыв</a>
+                    </footer>
+                </article>
+            <div class="answer">
+                <h3>Напишите ответ на отзыв</h3>
+                <div class="answer__input">
+                        <button class="clear-input">✕</button>
+                    <textarea class="answer__text"></textarea>
+                </div>
+                <button class="button answer__button">Опубликовать</button>
+            </div>
+            <footer class="result">Все 134 отзывов</footer>
+        </section>
+    </main>
 </body>
 </html>
